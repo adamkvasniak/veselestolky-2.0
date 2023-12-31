@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+.menu a {
+    color:#2C3239;
+    font-size: 1.7vw;
+    font-weight: 599;
+}
+
+
+@media (max-width: 768px){
+    .menu {
+        display: none;
+    }
+}

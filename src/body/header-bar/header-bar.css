@@ -1,0 +1,36 @@
+.contact-bar {
+    background-color: #9ABDE8;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ .logo {
+    margin-left: 2%;
+    height: 4vw;
+    width: auto;
+} 
+.logoContainer {
+    padding: 1vw;
+}
+.cart {
+    margin-right: 2%;
+}
+
+  
+@media (max-width: 768px){
+    
+   .logoContainer {
+        order: 1;
+        /* height: 12vw; */
+    }
+    .logo {
+        height: 13vw;
+    }
+    .cart {
+        order: 2;
+    }
+    
+    
+}

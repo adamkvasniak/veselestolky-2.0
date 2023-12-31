@@ -1,0 +1,19 @@
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+
+    padding-top: 5.5vw;
+    padding-bottom: 2.4vw;
+    background-color: #D2E3FA;
+    color: #333333;
+}
+.header {
+    text-align: center;
+    margin: 0.1vw;
+    padding: 0;
+    font-size:xx-large;
+    /* Add any other styling you want for the headers */
+  }

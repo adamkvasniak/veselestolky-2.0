@@ -1,0 +1,55 @@
+.footerContainer {
+    background-color: #28374B;
+    color: whitesmoke;
+    max-width: 100%;
+    padding: 20px 0;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.kontaktText {
+    margin-left: 2%;
+    width: 40%;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+   
+}
+.kontaktText h1 {
+    color: #B1B731;
+}
+.telKontakt{
+    display: flex;
+    flex-direction: row;
+    gap:2vw;
+    align-self: center;
+    margin-right: 15px;
+}
+.telKontakt a {
+    align-self: center;
+    padding: 8px 15px;
+    font-size: 29px;
+    background-color: #61A8FF;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+.telKontakt a:first-child {
+    background-color: #28374B;
+    font-size: 22px;
+}
+.telKontakt a:last-child {
+    font-size: 22px;
+    text-decoration: none;
+}
+.telKontakt a:hover {
+    background-color: #B1B731;
+}
+
+@media (max-width: 640px) {
+    .footerContainer ,.telKontakt{
+        flex-direction: column;
+        width: 100vw;
+    }
+}
