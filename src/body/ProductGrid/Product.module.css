@@ -1,0 +1,173 @@
+.productGrid{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adjust the gap between items as needed */
+    background-color: #bcd0ea;
+    padding: 2%;  
+    padding-top: 1%;
+    align-items: stretch;
+}
+.productCard {
+    display: grid;
+    grid-template-rows: repeat(6);  
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+
+.imageShow {
+    border:  black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+    
+    border-radius: 12px;
+}
+.carousel{
+    position: relative;
+}
+.carousel::selection{
+    background-color: none;
+}
+
+.availability {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 1.5%;
+    left: 1.5%;
+    width: 95%;
+    z-index: 1000;
+}
+.iconInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0;
+    
+    border-radius: 50px;
+    background-color: #F6F6F6;
+
+} 
+.iconInfo p{
+    font-weight:610;
+    font-size: 12px;
+    padding: 0 9px;
+} 
+
+.icon{
+
+    font-size: 37px;
+    font-weight: 2500;
+    background-color: #9ABDE8;
+    padding:8px;
+    border-radius: 50%;
+    
+}
+
+.left, .right {
+    cursor: pointer;
+    position: absolute;
+    color: #9ACD32;
+
+}
+.right {
+    right: 0;
+    top :40%;
+    border-radius: 3px 0 0 3px;
+}
+.left {
+    left: 0;
+    top :40%;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a grey background color */
+.left:hover, .right:hover {
+    background-color: #9ABDE8;
+    color: black;
+}
+.category {
+    color: #1e5fd6;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0.2vw;
+    padding: 0;
+}
+.category a{
+    color: #1e5fd6;
+    font-weight: bold;
+
+}
+
+.productTitle {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight:bold;
+}
+
+.dimensions {
+    font-size: 12px;
+}
+.productDescription{
+    margin: 0% 5% 0% 5%;
+}
+.cenaAinfoTlacidlo {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 10%;
+    padding: 17px ;
+}
+.price {
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px 0;
+}
+.detailButton {
+
+    text-align: center;
+    font-family: "rubik";
+    font-size:larger;
+    letter-spacing: 100;
+    background-color: #333333; /* Modern blue color */
+    color: #F5F5DC;
+
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Adjust padding for a larger, modern button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth color transition */
+}
+.cenaainfotlacidlo button:hover {
+    background-color: #4a7497; /* Darker blue on hover */
+}
+
+@media (max-width:1095px){
+    .productGrid {
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+        grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    }
+}
+@media (max-width:667px){   
+    .productGrid {
+        grid-template-rows: repeat(1, 1fr); /* 2 rows */
+        grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    }
+
+    .imageShow {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}

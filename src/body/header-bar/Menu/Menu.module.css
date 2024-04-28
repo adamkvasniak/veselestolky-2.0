@@ -2,12 +2,18 @@
     display: flex;
     flex-direction: row;
     margin: 0;
+    list-style: none;
 
 }
-.menu a {
-    color:#2C3239;
+.menuItem a {
+    color:#271f1f;
+    text-decoration: none;
+    margin:1.1vw;
     font-size: 1.7vw;
     font-weight: 599;
+}
+.activeMenuItem a {
+    color:white
 }
 
 

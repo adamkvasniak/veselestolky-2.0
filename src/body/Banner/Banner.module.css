@@ -1,0 +1,33 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 900px; /* Adjust height as needed */
+    background-image: url('IMG_6818.JPG'); /* Replace 'your-background-photo.jpg' with the path to your background photo */
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+  }
+  
+  .bannerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(35, 64, 176);
+  }
+  
+  .bannerContent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .bannerContent p {
+    font-size: 1.5em;
+  }
+  
+  .bannerContent:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  

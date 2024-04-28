@@ -6,50 +6,71 @@
     align-items: center;
     text-align: left;
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content: flex-start;
 }
 .kontaktText {
-    margin-left: 2%;
-    width: 40%;
-    font-size: 16px;
+    width: 100%;
+    align-items: flex-end;
+    
     text-align: left;
-    padding: 10px;
+    padding: 20px 0px 20px 30px;
+    margin-bottom: 0px;
+    
    
 }
-.kontaktText h1 {
-    color: #B1B731;
-}
-.telKontakt{
-    display: flex;
-    flex-direction: row;
-    gap:2vw;
-    align-self: center;
-    margin-right: 15px;
-}
-.telKontakt a {
-    align-self: center;
-    padding: 8px 15px;
-    font-size: 29px;
-    background-color: #61A8FF;
-    border-radius: 30px;
-    cursor: pointer;
-    }
-.telKontakt a:first-child {
-    background-color: #28374B;
-    font-size: 22px;
-}
-.telKontakt a:last-child {
-    font-size: 22px;
-    text-decoration: none;
-}
-.telKontakt a:hover {
-    background-color: #B1B731;
+.logoDiv{
+    background-color: #9ABDE8;
+    margin-top: 0px;
 }
 
+
+.telKontaktAktiv a {
+    display: flex;
+    gap: 7px;
+    align-self: flex-end;
+    color: #FFFFFF;
+    bottom: 20px;
+    padding: 8px 15px;
+    font-size: 29px;
+    background-color: #4682B4;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+.telKontaktAktiv a:first-of-type{
+    display: none;
+}
+
+.telKontaktAktiv a:last-child {
+    font-size: 37px;
+    text-decoration: none;
+    position: fixed;
+    z-index: 5;
+    border:solid 1px black;
+    font-weight: 450;
+    padding: 7px 20px;
+    letter-spacing: 0.8;
+    right: 2%;
+    bottom:1%
+}
+.napisNam{
+    align-items: center;
+}
+.neaktiv{
+    display: none;
+}
+.placeholder {
+    height: 50px;
+}
 @media (max-width: 640px) {
-    .footerContainer ,.telKontakt{
+    .footerContainer ,.t{
         flex-direction: column;
+        align-items: center;
+
         width: 100vw;
+    }
+    .kontaktText{
+        width: 80vw;
     }
 }

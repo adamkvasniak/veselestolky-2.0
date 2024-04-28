@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderBar = () => {
   return (
-    <div className="contact-bar">
+    <div className="contactBar">
       <Link className='logoContainer' to= '/' ><img src = {logo} className='logo'></img></Link>
       <Sidebar />
       <Menu />

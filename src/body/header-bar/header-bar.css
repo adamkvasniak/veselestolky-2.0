@@ -1,4 +1,4 @@
-.contact-bar {
+.contactBar {
     background-color: #9ABDE8;
     color: black;
     display: flex;
@@ -31,6 +31,4 @@
     .cart {
         order: 2;
     }
-    
-    
 }

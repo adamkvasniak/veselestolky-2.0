@@ -1,10 +1,12 @@
 import React from "react";
-import "./Text.css"
-function Text(){
+import styles from "./Text.module.css"
+import { Heading } from '@chakra-ui/react'
+
+const Text = ({header,popis}) => {
     return (
-    <div className="textContainer">
-        <h2 className="header">TOP ponuky</h2>
-        <h4 className="header">Objav čaro jedinečného bývania a unikátneho dizajnu</h4>
+    <div class={styles.textContainer}>
+        <Heading class={styles.header}>{header}</Heading>
+        <Heading class={styles.popis} as='h4' size='md'>{popis}</Heading>
     </div> 
 )}
 

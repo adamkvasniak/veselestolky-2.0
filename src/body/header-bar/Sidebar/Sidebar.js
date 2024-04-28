@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 import { IoClose } from "react-icons/io5";
 import {Link} from "react-router-dom";
 import { SidebarData } from './SidebarData';
-
+import { Heading,Text } from '@chakra-ui/react'
 
 function Navbar(){
     const [sidebar, setSideBar] = useState(false)
@@ -33,7 +33,9 @@ function Navbar(){
                             </Link>
                         </li>
                     )
-                })}
+                })};
+                <li><Heading colorScheme="whiteAlpha" >O nas</Heading></li>
+                <li><Text colorScheme="whiteAlpha" fontSize='lg'>(lg) In love with React & Next</Text></li>
             </ul>
         </nav>
         </>
