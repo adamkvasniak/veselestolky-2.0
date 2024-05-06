@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
@@ -17,7 +17,15 @@ import {Products} from './body/ProductGrid/Products'
 
 
 function App() {
-  
+  const fetchData = async () => {
+    const res = await fetch("http://localhost:4000/");
+    console.log(res);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <ChakraProvider>
       <BrowserRouter>

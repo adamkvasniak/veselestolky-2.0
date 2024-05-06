@@ -1,0 +1,24 @@
+# myApp/docker-compose.yaml
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend_c
+    ports:
+      - '3000:3000'
+  backend:
+    build: ./backend
+    container_name: backend_c
+    ports:
+      - '4003:4003'
+    stdin_open: true
+    tty: true
+  
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: your_username
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: your_database_name
+    ports:
+      - "5432:5432"
